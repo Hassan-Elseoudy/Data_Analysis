@@ -410,3 +410,25 @@ The **Σ** sign is used for aggregating using summation, but we might choose to 
 </div>
 
 <hr>
+
+<div>
+<h3 id="primary-and-foreign-keys">Primary and Foreign Keys</h3>
+<p>You learned a key element for <strong>JOIN</strong>ing tables in a database has to do with primary and foreign keys:</p>
+<ul>
+<li><p><strong>primary keys</strong> - are unique for every row in a table.  These are generally the first column in our database (like you saw with the <strong>id</strong> column for every table in the Parch &amp; Posey database).</p>
+</li>
+<li><p><strong>foreign keys</strong> - are the <strong>primary key</strong> appearing in another table, which allows the rows to be non-unique.  </p>
+</li>
+</ul>
+<p>Choosing the set up of data in our database is very important, but not usually the job of a data analyst.  This process is known as <strong>Database Normalization</strong>.</p>
+<h3 id="joins">JOINs</h3>
+<p>In this lesson, you learned how to combine data from multiple tables using <strong>JOIN</strong>s.  The three <strong>JOIN</strong> statements you are most likely to use are:</p>
+<ol>
+<li><strong>JOIN</strong> - an <strong>INNER JOIN</strong> that only pulls data that exists in both tables.</li>
+<li><strong>LEFT JOIN</strong> - pulls all the data that exists in both tables, as well as all of the rows from the table in the <strong>FROM</strong> even if they do not exist in the <strong>JOIN</strong> statement.</li>
+<li><strong>RIGHT JOIN</strong> - pulls all the data that exists in both tables, as well as all of the rows from the table in the <strong>JOIN</strong> even if they do not exist in the <strong>FROM</strong> statement.</li>
+</ol>
+<p>There are a few more advanced <strong>JOIN</strong>s that we did not cover here, and they are used in very specific use cases.  <a target="_blank" href="https://www.w3schools.com/sql/sql_union.asp">UNION and UNION ALL</a>, <a target="_blank" href="http://www.w3resource.com/sql/joins/cross-join.php">CROSS JOIN</a>, and the tricky <a target="_blank" href="https://www.w3schools.com/sql/sql_join_self.asp">SELF JOIN</a>.  These are more advanced than this course will cover, but it is useful to be aware that they exist, as they are useful in special cases.</p>
+<h3 id="alias">Alias</h3>
+<p>This allows to be more efficient in the number of characters needed to write.</p>
+<hr>
