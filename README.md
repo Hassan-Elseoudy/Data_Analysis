@@ -432,3 +432,55 @@ The **Σ** sign is used for aggregating using summation, but we might choose to 
 <h3 id="alias">Alias</h3>
 <p>This allows to be more efficient in the number of characters needed to write.</p>
 <hr>
+  
+  <div class="ltr"><div class="index-module--markdown--2MdcR ureact-markdown "><h2 id="Descriptive Statistics II">Descriptive Statistics II</h2>
+
+  
+  <div class="index--instructor-notes-wide--6JxNO layout--content-wide--tivIS layout--content--3Smmq"><div class="_notes-wide--notes-wide--23TbE"><div class="ltr"><div class="index-module--markdown--2MdcR ureact-markdown "><h2 id="measures-of-spread">Measures of Spread</h2>
+<p><strong>Measures of Spread</strong> are used to provide us an idea of how spread out our data are from one another.  Common measures of spread include:</p>
+<ol>
+<li><strong>Range</strong></li>
+<li><strong>Interquartile Range (IQR)</strong></li>
+<li><strong>Standard Deviation</strong></li>
+<li><strong>Variance</strong></li>
+</ol>
+<p>Throughout this lesson you will learn how to calculate these, as well as why we would use one measure of spread over another.</p>
+</div></div></div></div>
+<hr>
+
+<div class="index--instructor-notes-container--24U8Y shared--outer-container--3eppq"><div class="index--instructor-notes-wide--6JxNO layout--content-wide--tivIS layout--content--3Smmq"><div class="_notes-wide--notes-wide--23TbE"><div class="ltr"><div class="index-module--markdown--2MdcR ureact-markdown "><h2 id="histograms">Histograms</h2>
+<p>Histograms are super useful to understanding the different aspects of quantitative data.  In the upcoming concepts, you will see histograms used all the time to help you understand the four aspects we outlined earlier regarding a quantitative variable: </p>
+<ul>
+<li>center</li>
+<li>spread</li>
+<li>shape</li>
+<li>outliers</li>
+</ul>
+</div></div></div></div></div>
+
+<hr>
+
+<div class="index--instructor-notes-wide--6JxNO layout--content-wide--tivIS layout--content--3Smmq"><div class="_notes-wide--notes-wide--23TbE"><div class="ltr"><div class="index-module--markdown--2MdcR ureact-markdown "><h2 id="calculating-the-5-number-summary">Calculating the 5 Number Summary</h2>
+<p>The five number summary consist of 5 values:</p>
+<ol>
+<li><strong>Minimum:</strong> The smallest number in the dataset.</li>
+<li><b>Q<sub>1</sub></b>: The value such that 25% of the data fall below.</li>
+<li><b>Q<sub>2</sub></b>: The value such that 50% of the data fall below.</li>
+<li><b>Q<sub>3</sub></b>: The value such that 75% of the data fall below.</li>
+<li><strong>Maximum:</strong> The largest value in the dataset.</li>
+</ol>
+<p>In the above video we saw that calculating each of these values was essentially just finding the median of a bunch of different dataset.  Because we are essentially calculating a bunch of medians, the calculation depends on whether we have an odd or even number of values.  </p>
+<h2 id="range">Range</h2>
+<p>The <strong>range</strong> is then calculated as the difference between the <strong>maximum</strong> and the <strong>minimum</strong>.  </p>
+<h2 id="iqr">IQR</h2>
+<p>The <strong>interquartile range</strong> is calculated as the difference between <b>Q<sub>3</sub></b> and <b>Q<sub>1</sub></b>
+</div></div></div></div>
+
+<hr>
+
+<div class="index-module--markdown--2MdcR ureact-markdown "><h3 id="standard-deviation-and-variance">Standard Deviation and Variance</h3>
+<p>The <strong>standard deviation</strong> is one of the most common measures for talking about the spread of data.  It is defined as <strong>the average distance of each observation from the mean</strong>.  </p>
+</div>
+
+<hr>
+
