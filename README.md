@@ -1,6 +1,6 @@
-# Data_Analysis
+# Data Analysis
 
-### What is Data Analysis?
+## What is Data Analysis?
 #### 1. Questions
 Either you're given data and ask questions based on it, or you ask questions first and gather data based on that later. In both cases, great questions help you focus on relevant parts of your data and direct your analysis towards meaningful insights.
 
@@ -15,3 +15,259 @@ This step is typically approached with machine learning or inferential statistic
 
 #### 5. Communicate
 You often need to justify and convey meaning in the insights you’ve found. Or, if your end goal is to build a system, you usually need to share what you’ve built, explain how you reached design decisions, and report how well it performs. There are many ways to communicate your results: reports, slide decks, blog posts, emails, presentations, or even conversations. Data visualization will always be very valuable.
+
+
+<div class="ltr"><div class="index-module--markdown--2MdcR ureact-markdown "><h2 id="Descriptive Statistics I">Descriptive Statistics I</h2>
+<p>The table below summarizes our data types.  To expand on the information in the table, you can look through the text that follows.</p>
+<div class="index-module--table-responsive--1zG6k"><table class="index-module--table--8j68C index-module--table-striped--3HHC-">
+<thead>
+<tr>
+<th><strong>Data Types</strong></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Quantitative:</strong></td>
+<td><strong>Continuous</strong></td>
+<td><strong>Discrete</strong></td>
+</tr>
+<tr>
+<td></td>
+<td>Height, Age, Income</td>
+<td>Pages in a Book,  Trees in Yard, Dogs at a Coffee Shop</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>Categorical:</strong></td>
+<td><strong>Ordinal</strong></td>
+<td><strong>Nominal</strong></td>
+</tr>
+<tr>
+<td></td>
+<td>Letter Grade,  Survey Rating</td>
+<td>Gender, Marital Status, Breakfast Items</td>
+</tr>
+</tbody>
+</table>
+</div><p>Below is a little more detail of the information shared in the above table.</p>
+<h2 id="another-look">Another Look</h2>
+<p>To break down our data types, there are two main blocks:</p>
+<p><strong>Quantitative</strong> and <strong>Categorical</strong></p>
+<p><strong>Quantitative</strong> can be further divided into <code>Continuous</code> or <code>Discrete</code>.</p>
+<p><strong>Categorical</strong> data can be divided into <code>Ordinal</code> or <code>Nominal</code>.  </p>
+<p>You should have now mastered what types of data in the world around us falls into each of these four buckets: Discrete, Continuous, Nominal, and Ordinal.  In the next sections, we will work through the numeric summaries that relate specifically to quantitative variables. </p>
+<hr>
+<h2 id="quantitative-vs-categorical">Quantitative vs. Categorical</h2>
+<p>Some of these can be a bit tricky - notice even though zip codes are a number, they aren’t really a quantitative variable.  If we add two zip codes together, we do not obtain any useful information from this new value.  Therefore, this is a categorical variable.   </p>
+<p><strong>Height</strong>, <strong>Age</strong>, the <strong>Number of Pages in a Book</strong> and <strong>Annual Income</strong> all take on values that we can add, subtract and perform other operations with to gain useful insight.  Hence, these are <code>quantitative</code>.  </p>
+<p><strong>Gender</strong>, <strong>Letter Grade</strong>, <strong>Breakfast Type</strong>, <strong>Marital Status</strong>, and <strong>Zip Code</strong> can be thought of as labels for a group of items or individuals. Hence, these are <code>categorical</code>.</p>
+<hr>
+<h2 id="continuous-vs-discrete">Continuous vs. Discrete</h2>
+<p>To consider if we have continuous or discrete data, we should see if we can split our data into smaller and smaller units.  Consider time - we could measure an event in years, months, days, hours, minutes, or seconds, and even at seconds we know there are smaller units we could measure time in.  Therefore, we know this data type is continuous.  <strong>Height</strong>, <strong>age</strong>, and <strong>income</strong> are all examples of <code>continuous data</code>. Alternatively, the <strong>number of pages in a book</strong>, <strong>dogs I count outside a coffee shop</strong>, or <strong>trees in a yard</strong> are <code>discrete data</code>.  We would not want to split our dogs in half.</p>
+<hr>
+<h2 id="ordinal-vs-nominal">Ordinal vs. Nominal</h2>
+<p>In looking at categorical variables, we found <strong>Gender</strong>, <strong>Marital Status</strong>, <strong>Zip Code</strong> and your <strong>Breakfast items</strong> are <code>nominal variables</code> where there is no order ranking associated with this type of data.  Whether you ate cereal, toast, eggs, or only coffee for breakfast; there is no rank ordering associated with your breakfast.  </p>
+<p>Alternatively, the <strong>Letter Grade</strong> or <strong>Survey Ratings</strong> have a rank ordering associated with it, as <code>ordinal data</code>.  If you receive an A, this is higher than an A-.  An A- is ranked higher than a B+, and so on...  Ordinal variables frequently occur on rating scales from very poor to very good.  In many cases we turn these ordinal variables into numbers, as we can more easily analyze them.</p>
+<hr>
+<h2 id="final-words">Final Words</h2>
+<p>In this section, we looked at the different data types we might work with in the world around us.  When we work with data in the real world, it might not be very clean - sometimes there are typos or missing values.  When this is the case, simply having some expertise regarding the data and knowing the data type can assist in our ability to ‘clean’ this data.  Understanding data types can also assist in our ability to build visuals to best explain the data.</p>
+</div></div>
+
+<div class="index-module--markdown--2MdcR ureact-markdown ">
+<h2 id="analyzing-quantitative-data">Analyzing Quantitative Data</h2>
+<h4 id="four-aspects-for-quantitative-data">Four Aspects for Quantitative Data</h4>
+<p>There are four main aspects to analyzing <strong>Quantitative</strong> data.  </p>
+<ol>
+<li>Measures of <code>Center</code></li>
+<li>Measures of <code>Spread</code></li>
+<li>The <code>Shape</code> of the data.</li>
+<li><code>Outliers</code></li>
+</ol>
+<h4 id="analyzing-categorical-data">Analyzing Categorical Data</h4>
+<p>Analyzing categorical data has fewer parts to consider.  <strong>Categorical</strong> data is analyzed usually by looking at the counts or proportion of individuals that fall into each group.  For example if we were looking at the breeds of the dogs, we would care about how many dogs are of each breed, or what proportion of dogs are of each breed type.</p>
+<h2 id="measures-of-center">Measures of Center</h2>
+<p>There are three measures of center:</p>
+<ol>
+<li><code>Mean</code></li>
+<li><code>Median</code></li>
+<li><code>Mode</code></li>
+</ol>
+<h2 id="the-mean">The Mean</h2>
+<p>The mean is often called the average or the <strong>expected value</strong> in mathematics.  We calculate the mean by adding all of our values together, and dividing by the number of values in our dataset.</p>
+</div>
+
+<div class="index--instructor-notes-wide--6JxNO layout--content-wide--tivIS layout--content--3Smmq"><div class="_notes-wide--notes-wide--23TbE"><div class="ltr"><div class="index-module--markdown--2MdcR ureact-markdown "><h2 id="the-median">The Median</h2>
+<p>The <strong>median</strong> splits our data so that 50% of our values are lower and 50% are higher.  We found how we calculate the median depends on if we have an even number of observations or an odd number of observations. </p>
+<h4 id="median-for-odd-values">Median for Odd Values</h4>
+<p>If we have an <strong>odd</strong> number of observations, the <strong>median</strong> is simply the number in the <strong>direct middle</strong>.  For example, if we have 7 observations, the median is the fourth value when our numbers are ordered from smallest to largest.  If we have 9 observations, the median is the fifth value.  </p>
+<h4 id="median-for-even-values">Median for Even Values</h4>
+<p>If we have an <strong>even</strong> number of observations, the <strong>median</strong> is the <strong>average of the two values in the middle</strong>.  For example, if we have 8 observations, we average the fourth and fifth values together when our numbers are ordered from smallest to largest.  </p>
+  <p>In order to compute the median we <b>MUST</b> sort our values first.  </p>
+<p>Whether we use the mean or median to describe a dataset is largely dependent on the <strong>shape</strong> of our dataset and if there are any <strong>outliers</strong>.</p>
+</div></div></div></div>
+
+<div class="index--instructor-notes-wide--6JxNO layout--content-wide--tivIS layout--content--3Smmq"><div class="_notes-wide--notes-wide--23TbE"><div class="ltr"><div class="index-module--markdown--2MdcR ureact-markdown "><h2 id="the-mode">The Mode</h2>
+<p>The <strong>mode</strong> is the most frequently observed value in our dataset.  </p>
+<p>There might be multiple modes for a particular dataset, or no mode at all.  </p>
+<h4 id="no-mode">No Mode</h4>
+<p>If all observations in our dataset are observed with the same frequency, there is no mode.  If we have the dataset: </p>
+<p>1, 1, 2, 2, 3, 3, 4, 4</p>
+<p>There is no mode, because all observations occur the same number of times.  </p>
+<h4 id="many-modes">Many Modes</h4>
+<p>If two (or more) numbers share the maximum value, then there is more than one mode.  If we have the dataset:</p>
+<p>1, 2, 3, 3, 3, 4, 5, 6, 6, 6, 7, 8, 9 </p>
+<p>There are two modes 3 and 6, because these values share the maximum frequencies at 3 times, while all other values only appear once.  </p>
+</div></div></div></div>
+
+<div class="index--instructor-notes-container--24U8Y shared--outer-container--3eppq"><div class="index--instructor-notes-wide--6JxNO layout--content-wide--tivIS layout--content--3Smmq"><div class="_notes-wide--notes-wide--23TbE"><div class="ltr"><div class="index-module--markdown--2MdcR ureact-markdown "><h2 id="notation">Notation</h2>
+<p>Notation is a common language used to communicate mathematical ideas.  <strong>Think of notation as a universal language used by academic and industry professionals to convey mathematical ideas.</strong></p>
+<p>You likely already know some notation.  Plus, minus, multiply, division, and equal signs all have mathematical symbols that you are likely familiar with.  Each of these symbols replaces an idea for how numbers interact with one another. it does have the following properties:</p>
+<ol>
+<li><p><strong>Understanding how to correctly use notation makes you seem really smart.</strong>  Knowing how to read and write in notation is like learning a new language.  A language that is used to convey ideas associated with mathematics.  <br><br></p>
+</li>
+<li><p><strong>It allows you to read documentation, and implement an idea to your own problem.</strong>   Notation is used to convey how problems are solved all the time.  One really popular mathematical algorithm that is used to solve some of the world's most difficult problems is known as Gradient Boosting.  The way that it solves problems is explained here: <a target="_blank" href="https://en.wikipedia.org/wiki/Gradient_boosting">https://en.wikipedia.org/wiki/Gradient_boosting</a>.  If you really want to understand how this algorithm works, you need to be able to read and understand notation.  <br><br></p>
+</li>
+<li><p><strong>It makes ideas that are hard to say in words easier to convey.</strong>   Sometimes we just don't have the right words to say.  For those situations, I prefer to use notation to convey the message.  Similar to the way an emoji or meme might convey a feeling better than words, notation can convey an idea better than words.  Usually those ideas are related to mathematics, but I am not here to stifle your creativity.</p>
+</li>
+</ol>
+</div></div></div></div></div>
+
+<div class="index--instructor-notes-container--24U8Y shared--outer-container--3eppq"><div class="index--instructor-notes-wide--6JxNO layout--content-wide--tivIS layout--content--3Smmq"><div class="_notes-wide--notes-wide--23TbE"><div class="ltr"><div class="index-module--markdown--2MdcR ureact-markdown "><h2 id="example-to-introduce-notation">Example to Introduce Notation</h2>
+<h4 id="rows-and-columns">Rows and Columns</h4>
+<p>Spreadsheets are a common way to hold data.  They are composed of rows and columns.  Rows run horizontally, while columns run vertically.  Each column in a spreadsheet commonly holds a specific <strong>variable</strong>, while each row is commonly called an <strong>instance</strong> or <strong>individual</strong>.  </p>
+<div class="index-module--table-responsive--1zG6k"><table class="index-module--table--8j68C index-module--table-striped--3HHC-">
+<thead>
+<tr>
+<th><strong>Date</strong></th>
+<th><strong>Day of Week</strong></th>
+<th><strong>Time Spent On Site</strong> (<strong>X</strong>)</th>
+<th><strong>Buy</strong> (<strong>Y</strong>)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>June 15</td>
+<td>Thursday</td>
+<td>5</td>
+<td>No</td>
+</tr>
+<tr>
+<td>June 15</td>
+<td>Thursday</td>
+<td>10</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>June 16</td>
+<td>Friday</td>
+<td>20</td>
+<td>Yes</td>
+</tr>
+</tbody>
+</table>
+</div><p>This is a <strong>row</strong>:</p>
+<div class="index-module--table-responsive--1zG6k"><table class="index-module--table--8j68C index-module--table-striped--3HHC-">
+<thead>
+<tr>
+<th><strong>Date</strong></th>
+<th><strong>Day of Week</strong></th>
+<th><strong>Time Spent On Site</strong> (<strong>X</strong>)</th>
+<th><strong>Buy</strong> (<strong>Y</strong>)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>June 15</td>
+<td>Thursday</td>
+<td>5</td>
+<td>No</td>
+</tr>
+</tbody>
+</table>
+</div><p>This is a <strong>column</strong>:</p>
+<div class="index-module--table-responsive--1zG6k"><table class="index-module--table--8j68C index-module--table-striped--3HHC-">
+<thead>
+<tr>
+<th><strong>Time Spent On Site</strong> (<strong>X</strong>)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>5</td>
+</tr>
+<tr>
+<td>10</td>
+</tr>
+<tr>
+<td>20</td>
+</tr>
+</tbody>
+</table>
+</div><h4 id="before-collecting-data">Before Collecting Data</h4>
+<p><strong>Before collecting data, we usually start with a question, or many questions, that we would like to answer.  The purpose of data is to help us in answering these questions.</strong></p>
+<h4 id="random-variables">Random Variables</h4>
+<p>A <strong>random variable</strong> is a placeholder for the possible values of some process (mostly... the term 'some process' is a bit ambiguous).  As was stated before, notation is useful in that it helps us take complex ideas and simplify (often to a single letter or single symbol).  We see random variables represented by capital letters (<strong>X</strong>, <strong>Y</strong>, or <strong>Z</strong> are common ways to represent a random variable). </p>
+<p>We might have the random variable <strong>X</strong>, which is a holder for the possible values of the amount of time someone spends on our site.  Or the random variable <strong>Y</strong>, which is a holder for the possible values of whether or not an individual purchases a product.  </p>
+<p><strong>X</strong> is 'a holder' of the values that could possibly occur for the amount of time spent on our website.  Any number from 0 to infinity really.  </p>
+</div></div></div></div></div>
+
+<div class="index--instructor-notes-container--24U8Y shared--outer-container--3eppq"><div class="index--instructor-notes-wide--6JxNO layout--content-wide--tivIS layout--content--3Smmq"><div class="_notes-wide--notes-wide--23TbE"><div class="ltr"><div class="index-module--markdown--2MdcR ureact-markdown "><h2 id="capital-vs-lower-case-letters">Capital vs. Lower Case Letters</h2>
+<p><strong>Random variables</strong> are represented by capital letters.  Once we observe an outcome of these random variables, we notate it as a lower case of the same letter.  </p>
+<h4 id="example-1">Example 1</h4>
+<p>For example, the <strong>amount of time someone spends on our site</strong> is a <strong>random variable</strong> (we are not sure what the outcome will be for any particular visitor), and we would notate this with <strong>X</strong>.  Then when the first person visits the website, if they spend 5 minutes, we have now observed this outcome of our random variable.  We would notate any outcome as a lowercase letter with a subscript associated with the order that we observed the outcome.    </p>
+<p>If 5 individuals visit our website, the first spends 10 minutes, the second spends 20 minutes, the third spends 45 mins, the fourth spends 12 minutes, and the fifth spends 8 minutes; we can notate this problem in the following way:</p>
+<p><strong>X</strong> is the amount of time an individual spends on the website.</p> 
+  <p><b>x<sub>1</sub></b> = 10,  <b>x<sub>2</sub></b> = 20,  <b>x<sub>3</sub></b> = 45,  <b>x<sub>4</sub></b> = 12,
+    <b>x<sub>5</sub></b> = 8.</p> <p>The capital <strong>X</strong> is associated with this idea of a <strong>random variable</strong>, while the observations of the random variable take on lowercase <strong>x</strong> values.  </p>
+<h4 id="example-2">Example 2</h4>
+<p>Taking this one step further, we could ask: </p>
+<p><strong>What is the probability someone spends more than 20 minutes in our website?</strong></p>
+<p>In notation, we would write:</p>
+<p><strong>P(X &gt; 20)?</strong></p>
+<p>Here <strong>P</strong> stands for <strong>probability</strong>, while the parentheses encompass the statement for which we would like to find the probability.  Since <strong>X</strong> represents the amount of time spent on the website, this notation represents the probability the amount of time on the website is greater than 20.  </p>
+<p>We could find this in the above example by noticing that only one of the 5 observations exceeds 20.  So, we would say there is a <strong>1</strong> (the 45) <strong>in 5 or 20%</strong> chance that an individual spends more than 20 minutes on our website (based on this dataset).  </p>
+<h4 id="example-3">Example 3</h4>
+<p>If we asked: <strong>What is the probability of an individual spending 20 or more minutes on our website?</strong> We could notate this as:</p>
+<p><strong>P(X ≥ 20)?</strong></p>
+<p>We could then find this by noticing there are two out of the five individuals that spent 20 or more minutes on the website.  So this probability is <strong>2 out of 5 or 40%</strong>.</p>
+</div></div></div></div></div>
+
+<div class="index--instructor-notes-wide--6JxNO layout--content-wide--tivIS layout--content--3Smmq"><div class="_notes-wide--notes-wide--23TbE"><div class="ltr"><div class="index-module--markdown--2MdcR ureact-markdown "><h2 id="notation-for-calculating-the-mean">Notation for Calculating the Mean</h2>
+<p>We know that the mean is calculated as the sum of all our values divided by the number of values in our dataset.  </p>
+<p>In our current notation, adding all of our values together can be extremely tedious.  If we want to add 3 values of some random variable together, we would use the notation:</p>
+  <p><b>x<sub>1</sub></b> + <b>x<sub>2</sub></b> + <b>x<sub>3</sub></b></p>
+<p>If we want to add 6 values together, we would use the notation:</p>
+  <p><b>x<sub>1</sub></b> + <b>x<sub>2</sub></b> + <b>x<sub>3</sub></b> + <b>x<sub>4</sub></b> + <b>x<sub>5</sub></b> + <b>x<sub>6</sub></b></p>
+<p>To extend this to add one hundred, one thousand, or one million values would be ridiculous!  How can we make this easier to communicate?!</p>
+</div></div></div></div>
+<div class="index-module--markdown--2MdcR ureact-markdown ">
+
+## Aggregations
+
+An **aggregation** is a way to turn multiple numbers into fewer numbers (commonly one number).
+
+**Summation** is a common aggregation. The notation used to sum our values is a greek symbol called sigma **Σ**.
+
+#### Example 1
+
+Imagine we are looking at the amount of time individuals spend on our website. We collect data from nine individuals:
+If we want to sum the **first three values** together In our new notation, we can write:
+
+<img src = 'https://latex.codecogs.com/gif.latex?%5Csum_%7Bi%3D1%7D%5E%7Bi%3D3%7Dx_%7Bi%7D'>
+
+#### Other Aggregations
+
+The **Σ** sign is used for aggregating using summation, but we might choose to aggregate in other ways. Summing is one of the most common ways to need to aggregate. However, we might need to aggregate in alternative ways. If we wanted to multiply all of our values together we would use a product sign **Π** , capital Greek letter pi. The way we aggregate continuous values is with something known as integration (a common technique in calculus), which uses the following symbol **∫**
+</div>
+
+<div class="index--instructor-notes-wide--6JxNO layout--content-wide--tivIS layout--content--3Smmq"><div class="_notes-wide--notes-wide--23TbE"><div class="ltr"><div class="index-module--markdown--2MdcR ureact-markdown "><h2 id="final-steps-for-calculating-the-mean">Final Steps for Calculating the Mean</h2>
+<p>To finalize our calculation of the mean, we introduce <strong>n</strong> as the total number of values in our dataset.  We can use this notation both at the top of our summation, as well as for the value that we divide by when calculating the mean.  </p>
+  
+<img src = 'https://latex.codecogs.com/gif.latex?%5Cfrac%7B1%7D%7Bn%7D%5Csum_%7Bi%3D7%7D%5E%7Bi%3D9%7Dx_%7Bi%7D'>
+<p>Instead of writing out all of the above, we commonly write <b>x̄</b> to represent the mean of a dataset.
