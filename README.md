@@ -269,5 +269,144 @@ The **Σ** sign is used for aggregating using summation, but we might choose to 
 <div class="index--instructor-notes-wide--6JxNO layout--content-wide--tivIS layout--content--3Smmq"><div class="_notes-wide--notes-wide--23TbE"><div class="ltr"><div class="index-module--markdown--2MdcR ureact-markdown "><h2 id="final-steps-for-calculating-the-mean">Final Steps for Calculating the Mean</h2>
 <p>To finalize our calculation of the mean, we introduce <strong>n</strong> as the total number of values in our dataset.  We can use this notation both at the top of our summation, as well as for the value that we divide by when calculating the mean.  </p>
   
-<img src = 'https://latex.codecogs.com/gif.latex?%5Cfrac%7B1%7D%7Bn%7D%5Csum_%7Bi%3D7%7D%5E%7Bi%3D9%7Dx_%7Bi%7D'>
+<img src = 'https://latex.codecogs.com/gif.latex?%5Cfrac%7B1%7D%7Bn%7D%5Csum_%7Bi%3D1%7D%5E%7Bi%3Dn%7Dx_%7Bi%7D'>
 <p>Instead of writing out all of the above, we commonly write <b>x̄</b> to represent the mean of a dataset.
+<hr>
+<h2 id="Basic SQL">Basic SQL</h2>
+<h3 id="entity-relationship-diagrams">Entity Relationship Diagrams</h3>
+<p>An <strong>entity relationship diagram</strong> (ERD) is a common way to view data in a database.  Below is the ERD for the database we will use from Parch &amp; Posey.  These diagrams help you visualize the data you are analyzing  including:</p>
+<ol>
+<li>The names of the tables.</li>
+<li>The columns in each table.</li>
+<li>The way the tables work together.  </li>
+</ol>
+<p><strong>You can think of each of the boxes below as a spreadsheet.</strong></p>
+</div></div><span></span></div></div></div><div><div class="index--container--2OwOl"><div class="index--atom--lmAIo layout--content--3Smmq"><div><a href="#" class="image-atom--image-atom--1XDdu"><div class="index--image-atom-content--YoZVu"><div class="index--image-and-annotations-container--1o6QP"><img src="https://video.udacity-data.com/topher/2017/August/59821d7d_screen-shot-2017-08-02-at-11.14.25-am/screen-shot-2017-08-02-at-11.14.25-am.png" width="809px" class="index--image--1wh9w"></div></div></a></div><span></span></div></div></div><div><div class="index--container--2OwOl"><div class="index--atom--lmAIo layout--content--3Smmq"><div class="ltr"><div class="index-module--markdown--2MdcR ureact-markdown "><h3 id="what-to-notice">What to Notice</h3>
+<p>In the Parch &amp; Posey database there are five tables (essentially 5 spreadsheets): </p>
+<ol>
+<li><strong>web_events</strong></li>
+<li><strong>accounts</strong></li>
+<li><strong>orders</strong></li>
+<li><strong>sales_reps</strong></li>
+<li><strong>region</strong> </li>
+</ol>
+<p>You can think of each of these tables as an individual spreadsheet.  Then the columns in each spreadsheet are listed below the table name.  For example, the <strong>region</strong> table has two columns: <code>id</code> and <code>name</code>.  Alternatively the <strong>web_events</strong> table has four columns.</p>
+</div></div><span></span></div></div></div><div><div class="index--container--2OwOl"><div class="index--atom--lmAIo layout--content--3Smmq"><div><a href="#" class="image-atom--image-atom--1XDdu"><div class="index--image-atom-content--YoZVu"><div class="index--image-and-annotations-container--1o6QP"><img src="https://video.udacity-data.com/topher/2017/August/59852269_screen-shot-2017-08-04-at-6.41.07-pm/screen-shot-2017-08-04-at-6.41.07-pm.png" width="568px" class="index--image--1wh9w"></div></div></a></div><span></span></div></div></div><div><div class="index--container--2OwOl"><div class="index--atom--lmAIo layout--content--3Smmq"><div class="ltr"><div class="index-module--markdown--2MdcR ureact-markdown "><p>The "crow's foot" that connects the tables together shows us how the columns in one table relate to the columns in another table.  In this first lesson, you will be learning the basics of how to work with SQL to interact with a single table.</p>
+</div></div><span></span></div></div></div></div>
+<hr>
+<div class="_main--content-container--ILkoI"><div><div class="index--container--2OwOl"><div class="index--atom--lmAIo layout--content--3Smmq"><div class="ltr"><div class="index-module--markdown--2MdcR ureact-markdown "><h2 id="introduction">Introduction</h2>
+<p>Before we dive into writing Structured Query Language (SQL) queries, let's take a look at what makes SQL and the databases that utilize SQL so popular.  </p>
+<p>I think it is an important distinction to say that SQL is a <strong>language</strong>.  Hence, the last word of SQ<strong>L</strong> being <strong>language</strong>.  SQL is used all over the place beyond the databases we will utilize in this class.  With that being said, SQL is most popular for its interaction with databases.  For this class, you can think of a <strong>database</strong> as a bunch of excel spreadsheets all sitting in one place.  Not all databases are a bunch of excel spreadsheets sitting in one place, but it is a reasonable idea for this class.</p>
+  <hr>
+<h2 id="why-do-data-analysts-use-sql-">Why Do Data Analysts Use SQL?</h2>
+<p>There are some major advantages to using <strong>traditional relational databases,</strong> which we interact with using SQL. The five most apparent are:</p>
+<ul>
+<li>SQL is easy to understand.</li>
+<li>Traditional databases allow us to access data directly.</li>
+<li>Traditional databases allow us to audit and replicate our data.</li>
+<li>SQL is a great tool for analyzing multiple tables at once.</li>
+<li>SQL allows you to analyze more complex questions than dashboard tools like Google Analytics.</li>
+</ul>
+</div>
+  <hr>
+<h2 id="why-do-businesses-choose-sql-">Why Do Businesses Choose SQL?</h2>
+<ol>
+<li><p><strong>Data integrity is ensured</strong> - only the data you want entered is entered, and only certain users are able to enter data into the database. <br><br></p>
+</li>
+<li><p><strong>Data can be accessed quickly</strong> - SQL allows you to obtain results very quickly from the data stored in a database.  Code can be optimized to quickly pull results.  <br><br></p>
+</li>
+<li><p><strong>Data is easily shared</strong> - multiple individuals can access data stored in a database, and the data is the same for all users allowing for consistent results for anyone with access to your database.</p>
+</li>
+</ol>
+</div></div><span></span></div></div></div></div>
+<hr>
+<div class="index--instructor-notes-wide--6JxNO layout--content-wide--tivIS layout--content--3Smmq"><div class="_notes-wide--notes-wide--23TbE"><div class="ltr"><div class="index-module--markdown--2MdcR ureact-markdown "><p>A few key points about data stored in SQL databases:</p>
+<ol>
+<li><p><strong>Data in databases is stored in tables that can be thought of just like Excel spreadsheets.</strong> <br>For the most part, you can think of a database as a bunch of Excel spreadsheets.  Each spreadsheet has rows and columns.  Where each row holds data on a transaction, a person, a company, etc., while each column holds data pertaining to a particular aspect of one of the rows you care about like a name, location, a unique id, etc.<br><br></p>
+</li>
+<li><p><strong>All the data in the same column must match in terms of data type. </strong> <br>An entire column is considered quantitative, discrete, or as some sort of string.  This means if you have one row with a string in a particular column, the entire column might change to a text data type.  <strong>This can be very bad if you want to do math with this column!</strong><br><br></p>
+</li>
+<li><p><strong>Consistent column types are one of the main reasons working with databases is fast.</strong> <br>Often databases hold <strong>a LOT</strong> of data.  So, knowing that the columns are all of the same type of data means that obtaining data from a database can still be fast.<br><br></p>
+</li>
+</ol>
+</div></div></div></div>
+<hr>
+
+## Statements
+<div class="index-module--table-responsive--1zG6k"><table class="index-module--table--8j68C index-module--table-striped--3HHC-">
+<thead>
+<tr>
+<th><strong>Statement</strong></th>
+<th><strong>How to Use It</strong></th>
+<th><strong>Other Details</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>SELECT</td>
+<td>SELECT <strong>Col1</strong>, <strong>Col2</strong>, ...</td>
+<td>Provide the columns you want</td>
+</tr>
+<tr>
+<td>FROM</td>
+<td>FROM <strong>Table</strong></td>
+<td>Provide the table where the columns exist</td>
+</tr>
+<tr>
+<td>LIMIT</td>
+<td>LIMIT <strong>10 </strong></td>
+<td>Limits based number of rows returned</td>
+</tr>
+<tr>
+<td>ORDER BY</td>
+<td>ORDER BY <strong>Col</strong></td>
+<td>Orders table based on the column.  Used with <strong>DESC</strong>.</td>
+</tr>
+<tr>
+<td>WHERE</td>
+<td>WHERE <strong>Col &gt; 5</strong></td>
+<td>A conditional statement to filter your results </td>
+</tr>
+<tr>
+<td>LIKE</td>
+<td>WHERE <strong>Col LIKE '%me%'</strong></td>
+<td>Only pulls rows where column has 'me' within the text </td>
+</tr>
+<tr>
+<td>IN</td>
+<td>WHERE <strong>Col IN ('Y', 'N')</strong></td>
+<td>A filter for only rows with column of 'Y' or 'N'</td>
+</tr>
+<tr>
+<td>NOT</td>
+<td>WHERE <strong>Col NOT IN ('Y', 'N')</strong></td>
+<td><strong>NOT</strong> is frequently used with <strong>LIKE</strong> and <strong>IN</strong></td>
+</tr>
+<tr>
+<td>AND</td>
+<td>WHERE <strong>Col1 &gt; 5 AND Col2 &lt; 3 </strong></td>
+<td>Filter rows where two or more conditions must be true </td>
+</tr>
+<tr>
+<td>OR</td>
+<td>WHERE <strong>Col1 &gt; 5 OR Col2 &lt; 3</strong></td>
+<td>Filter rows where at least one condition must be true</td>
+</tr>
+<tr>
+<td>BETWEEN</td>
+<td>WHERE <strong>Col BETWEEN 3 AND 5</strong></td>
+<td>Often easier syntax than using an <strong>AND</strong></td>
+</tr>
+</tbody>
+</table>
+</div><h3 id="other-tips">Other Tips</h3>
+<p>Though SQL is <strong>not case sensitive</strong> (it doesn't care if you write your statements as all uppercase or lowercase), we discussed some best practices.  <strong>The order of the key words does matter!</strong>  Using what you know so far, you will want to write your statements as:</p>
+<pre><code><span class="hljs-operator"><span class="hljs-keyword">SELECT</span> col1, col2
+<span class="hljs-keyword">FROM</span> table1
+<span class="hljs-keyword">WHERE</span> col3  &gt; <span class="hljs-number">5</span> <span class="hljs-keyword">AND</span> col4 <span class="hljs-keyword">LIKE</span> <span class="hljs-string">'%os%'</span>
+<span class="hljs-keyword">ORDER</span> <span class="hljs-keyword">BY</span> col5
+<span class="hljs-keyword">LIMIT</span> <span class="hljs-number">10</span>;</span>
+</code></pre><p>Notice, you can retrieve different columns than those being used in the <strong>ORDER BY</strong> and <strong>WHERE</strong> statements.  Assuming all of these column names existed in this way (<code>col1</code>, <code>col2</code>, <code>col3</code>, <code>col4</code>, <code>col5</code>) within a table called <code>table1</code>, this query would run just fine.</p>
+</div>
+
+<hr>
