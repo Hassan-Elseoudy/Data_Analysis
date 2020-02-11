@@ -484,3 +484,52 @@ The **Σ** sign is used for aggregating using summation, but we might choose to 
 
 <hr>
 
+<h2 id="shape">Shape</h2>
+<p>We learned that the distribution of our data is frequently associated with one of the three <strong>shapes</strong>:</p>
+<p><strong>1. Right-skewed</strong></p>
+<p><strong>2. Left-skewed</strong></p>
+<p><strong>3. Symmetric</strong> (frequently normally distributed)</p>
+<p>Depending on the shape associated with our dataset, certain measures of center or spread may be better for summarizing our dataset.</p>
+<p>When we have data that follows a <strong>normal</strong> distribution, we can completely understand our dataset using the <code>mean</code> and <code>standard deviation</code>.</p>
+<p>However, if our dataset is <strong>skewed</strong>, the <code>5 number summary</code> (and measures of center associated with it) might be better to summarize our dataset.  </p>
+<hr>
+<h2 id="outliers">Outliers</h2>
+<p>We learned that outliers have a larger influence on measures like the mean than on measures like the median.  We learned that we should work with outliers on a situation by situation basis.  Common techniques include:</p>
+<p><strong>1.</strong> At least note they exist and the impact on summary statistics.</p>
+<p><strong>2.</strong> If typo - remove or fix</p>
+<p><strong>3.</strong> Understand why they exist, and the impact on questions we are trying to answer about our data.</p>
+<p><strong>4.</strong> Reporting the 5 number summary values is often a better indication than measures like the mean and standard deviation when we have outliers. </p>
+<p><strong>5.</strong> Be careful in reporting. Know how to ask the right questions.</p>
+<hr>
+<h2 id="histograms-and-box-plots">Histograms and Box Plots</h2>
+<p>We also looked at histograms and box plots to visualize our quantitative data.  Identifying outliers and the shape associated with the distribution of our data are easier when using a visual as opposed to using summary statistics.</p>
+</div>
+
+<hr>
+<div class="_main--content-container--ILkoI"><div><div class="index--container--2OwOl"><div class="index--atom--lmAIo layout--content--3Smmq"><div class="ltr"><div class="index-module--markdown--2MdcR ureact-markdown "><h3 id="more-on-center-and-spread">More On Center And Spread</h3>
+<p>When analyzing skewed data, it is common to report numeric summaries like the median and 5 number summary, as the mean and standard deviation may be misleading.  </p>
+<p>However, with symmetric data, the mean and standard deviation are commonly used, as we can understand what proportion of points might fall 1, 2, or 3 standard deviations away based on the empirical rule associated with normal distributions.</p>
+</div></div><span></span></div></div></div><div><div class="index--container--2OwOl"><div class="index--atom--lmAIo layout--content--3Smmq"><div><a href="#" class="image-atom--image-atom--1XDdu"><div class="index--image-atom-content--YoZVu"><div class="index--image-and-annotations-container--1o6QP"><img src="https://video.udacity-data.com/topher/2017/December/5a272f73_screen-shot-2017-12-05-at-3.44.09-pm/screen-shot-2017-12-05-at-3.44.09-pm.png" alt="" width="676px" class="index--image--1wh9w"></div></div></a></div><span></span></div></div></div><div><div class="index--container--2OwOl"><div class="index--atom--lmAIo layout--content--3Smmq"><div class="ltr"><div class="index-module--markdown--2MdcR ureact-markdown "><p>You can read more about this <a target="_blank" href="https://www.mathsisfun.com/data/standard-normal-distribution.html">here</a>.  </p>
+<h3 id="standard-deviation-and-skewed-distributions">Standard Deviation and Skewed Distributions</h3>
+<p>Standard Deviations can be calculated for any data set, whether it is normally distributed or skewed. So with the data below be careful what assumptions you are making about the underlying data.</p>
+<p>Also the standard deviation basically provides which of two sets of data are more spread out.</p>
+</div></div><span></span></div></div></div>
+  
+  <div class="index-module--markdown--2MdcR ureact-markdown "><h2 id="descriptive-vs-inferential-statistics">Descriptive vs. Inferential Statistics</h2>
+<p>In this section, we learned about how <strong>Inferential Statistics</strong> differs from <strong>Descriptive Statistics</strong>.  </p>
+<hr>
+<h3 id="descriptive-statistics">Descriptive Statistics</h3>
+<p><code>Descriptive statistics</code> <strong>is about describing our collected data</strong> using the measures discussed throughout this lesson: measures of center, measures of spread, shape of our distribution, and outliers.  We can also use plots of our data to gain a better understanding.</p>
+<hr>
+<h3 id="inferential-statistics">Inferential Statistics</h3>
+<p><code>Inferential Statistics</code> <strong>is about using our collected data to draw conclusions to a larger population</strong>.  Performing inferential statistics well requires that we take a sample that accurately represents our population of interest.  </p>
+<p>A common way to collect data is via a survey.  However, surveys may be extremely biased depending on the types of questions that are asked, and the way the questions are asked.   This is a topic you should think about when tackling the first project.  </p>
+<p>We looked at specific examples that allowed us to identify the </p>
+<ol>
+<li><strong>Population</strong> - our entire group of interest.</li>
+<li><strong>Parameter</strong> - numeric summary about a population</li>
+<li><strong>Sample</strong> - subset of the population</li>
+<li><strong>Statistic</strong> - numeric summary about a sample</li>
+</ol>
+<hr>
+</div>
