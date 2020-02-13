@@ -17,7 +17,7 @@ This step is typically approached with machine learning or inferential statistic
 You often need to justify and convey meaning in the insights you’ve found. Or, if your end goal is to build a system, you usually need to share what you’ve built, explain how you reached design decisions, and report how well it performs. There are many ways to communicate your results: reports, slide decks, blog posts, emails, presentations, or even conversations. Data visualization will always be very valuable.
 
 
-<div class="ltr"><div class="index-module--markdown--2MdcR ureact-markdown "><h2 id="Descriptive Statistics I">Descriptive Statistics I</h2>
+<div ><h2 id="Descriptive Statistics I">Descriptive Statistics I</h2>
 <p>The table below summarizes our data types.  To expand on the information in the table, you can look through the text that follows.</p>
 <div class="index-module--table-responsive--1zG6k"><table class="index-module--table--8j68C index-module--table-striped--3HHC-">
 <thead>
@@ -79,7 +79,7 @@ You often need to justify and convey meaning in the insights you’ve found. Or,
 <p>In this section, we looked at the different data types we might work with in the world around us.  When we work with data in the real world, it might not be very clean - sometimes there are typos or missing values.  When this is the case, simply having some expertise regarding the data and knowing the data type can assist in our ability to ‘clean’ this data.  Understanding data types can also assist in our ability to build visuals to best explain the data.</p>
 </div></div>
 
-<div class="index-module--markdown--2MdcR ureact-markdown ">
+<div >
 <h2 id="analyzing-quantitative-data">Analyzing Quantitative Data</h2>
 <h4 id="four-aspects-for-quantitative-data">Four Aspects for Quantitative Data</h4>
 <p>There are four main aspects to analyzing <strong>Quantitative</strong> data.  </p>
@@ -102,7 +102,7 @@ You often need to justify and convey meaning in the insights you’ve found. Or,
 <p>The mean is often called the average or the <strong>expected value</strong> in mathematics.  We calculate the mean by adding all of our values together, and dividing by the number of values in our dataset.</p>
 </div>
 
-<div class="index--instructor-notes-wide--6JxNO layout--content-wide--tivIS layout--content--3Smmq"><div class="_notes-wide--notes-wide--23TbE"><div class="ltr"><div class="index-module--markdown--2MdcR ureact-markdown "><h2 id="the-median">The Median</h2>
+<div <h2 id="the-median">The Median</h2>
 <p>The <strong>median</strong> splits our data so that 50% of our values are lower and 50% are higher.  We found how we calculate the median depends on if we have an even number of observations or an odd number of observations. </p>
 <h4 id="median-for-odd-values">Median for Odd Values</h4>
 <p>If we have an <strong>odd</strong> number of observations, the <strong>median</strong> is simply the number in the <strong>direct middle</strong>.  For example, if we have 7 observations, the median is the fourth value when our numbers are ordered from smallest to largest.  If we have 9 observations, the median is the fifth value.  </p>
@@ -112,7 +112,7 @@ You often need to justify and convey meaning in the insights you’ve found. Or,
 <p>Whether we use the mean or median to describe a dataset is largely dependent on the <strong>shape</strong> of our dataset and if there are any <strong>outliers</strong>.</p>
 </div></div></div></div>
 
-<div class="index--instructor-notes-wide--6JxNO layout--content-wide--tivIS layout--content--3Smmq"><div class="_notes-wide--notes-wide--23TbE"><div class="ltr"><div class="index-module--markdown--2MdcR ureact-markdown "><h2 id="the-mode">The Mode</h2>
+<div <h2 id="the-mode">The Mode</h2>
 <p>The <strong>mode</strong> is the most frequently observed value in our dataset.  </p>
 <p>There might be multiple modes for a particular dataset, or no mode at all.  </p>
 <h4 id="no-mode">No Mode</h4>
@@ -125,7 +125,7 @@ You often need to justify and convey meaning in the insights you’ve found. Or,
 <p>There are two modes 3 and 6, because these values share the maximum frequencies at 3 times, while all other values only appear once.  </p>
 </div></div></div></div>
 
-<div class="index--instructor-notes-container--24U8Y shared--outer-container--3eppq"><div class="index--instructor-notes-wide--6JxNO layout--content-wide--tivIS layout--content--3Smmq"><div class="_notes-wide--notes-wide--23TbE"><div class="ltr"><div class="index-module--markdown--2MdcR ureact-markdown "><h2 id="notation">Notation</h2>
+<div ></div><div <h2 id="notation">Notation</h2>
 <p>Notation is a common language used to communicate mathematical ideas.  <strong>Think of notation as a universal language used by academic and industry professionals to convey mathematical ideas.</strong></p>
 <p>You likely already know some notation.  Plus, minus, multiply, division, and equal signs all have mathematical symbols that you are likely familiar with.  Each of these symbols replaces an idea for how numbers interact with one another. it does have the following properties:</p>
 <ol>
@@ -138,7 +138,7 @@ You often need to justify and convey meaning in the insights you’ve found. Or,
 </ol>
 </div></div></div></div></div>
 
-<div class="index--instructor-notes-container--24U8Y shared--outer-container--3eppq"><div class="index--instructor-notes-wide--6JxNO layout--content-wide--tivIS layout--content--3Smmq"><div class="_notes-wide--notes-wide--23TbE"><div class="ltr"><div class="index-module--markdown--2MdcR ureact-markdown "><h2 id="example-to-introduce-notation">Example to Introduce Notation</h2>
+<div ><div <h2 id="example-to-introduce-notation">Example to Introduce Notation</h2>
 <h4 id="rows-and-columns">Rows and Columns</h4>
 <p>Spreadsheets are a common way to hold data.  They are composed of rows and columns.  Rows run horizontally, while columns run vertically.  Each column in a spreadsheet commonly holds a specific <strong>variable</strong>, while each row is commonly called an <strong>instance</strong> or <strong>individual</strong>.  </p>
 <div class="index-module--table-responsive--1zG6k"><table class="index-module--table--8j68C index-module--table-striped--3HHC-">
@@ -217,7 +217,7 @@ You often need to justify and convey meaning in the insights you’ve found. Or,
 <p><strong>X</strong> is 'a holder' of the values that could possibly occur for the amount of time spent on our website.  Any number from 0 to infinity really.  </p>
 </div></div></div></div></div>
 
-<div class="index--instructor-notes-container--24U8Y shared--outer-container--3eppq"><div class="index--instructor-notes-wide--6JxNO layout--content-wide--tivIS layout--content--3Smmq"><div class="_notes-wide--notes-wide--23TbE"><div class="ltr"><div class="index-module--markdown--2MdcR ureact-markdown "><h2 id="capital-vs-lower-case-letters">Capital vs. Lower Case Letters</h2>
+<div ><div <h2 id="capital-vs-lower-case-letters">Capital vs. Lower Case Letters</h2>
 <p><strong>Random variables</strong> are represented by capital letters.  Once we observe an outcome of these random variables, we notate it as a lower case of the same letter.  </p>
 <h4 id="example-1">Example 1</h4>
 <p>For example, the <strong>amount of time someone spends on our site</strong> is a <strong>random variable</strong> (we are not sure what the outcome will be for any particular visitor), and we would notate this with <strong>X</strong>.  Then when the first person visits the website, if they spend 5 minutes, we have now observed this outcome of our random variable.  We would notate any outcome as a lowercase letter with a subscript associated with the order that we observed the outcome.    </p>
@@ -238,7 +238,7 @@ You often need to justify and convey meaning in the insights you’ve found. Or,
 <p>We could then find this by noticing there are two out of the five individuals that spent 20 or more minutes on the website.  So this probability is <strong>2 out of 5 or 40%</strong>.</p>
 </div></div></div></div></div>
 
-<div class="index--instructor-notes-wide--6JxNO layout--content-wide--tivIS layout--content--3Smmq"><div class="_notes-wide--notes-wide--23TbE"><div class="ltr"><div class="index-module--markdown--2MdcR ureact-markdown "><h2 id="notation-for-calculating-the-mean">Notation for Calculating the Mean</h2>
+<div <h2 id="notation-for-calculating-the-mean">Notation for Calculating the Mean</h2>
 <p>We know that the mean is calculated as the sum of all our values divided by the number of values in our dataset.  </p>
 <p>In our current notation, adding all of our values together can be extremely tedious.  If we want to add 3 values of some random variable together, we would use the notation:</p>
   <p><b>x<sub>1</sub></b> + <b>x<sub>2</sub></b> + <b>x<sub>3</sub></b></p>
@@ -246,7 +246,7 @@ You often need to justify and convey meaning in the insights you’ve found. Or,
   <p><b>x<sub>1</sub></b> + <b>x<sub>2</sub></b> + <b>x<sub>3</sub></b> + <b>x<sub>4</sub></b> + <b>x<sub>5</sub></b> + <b>x<sub>6</sub></b></p>
 <p>To extend this to add one hundred, one thousand, or one million values would be ridiculous!  How can we make this easier to communicate?!</p>
 </div></div></div></div>
-<div class="index-module--markdown--2MdcR ureact-markdown ">
+<div >
 
 ## Aggregations
 
@@ -266,7 +266,7 @@ If we want to sum the **first three values** together In our new notation, we ca
 The **Σ** sign is used for aggregating using summation, but we might choose to aggregate in other ways. Summing is one of the most common ways to need to aggregate. However, we might need to aggregate in alternative ways. If we wanted to multiply all of our values together we would use a product sign **Π** , capital Greek letter pi. The way we aggregate continuous values is with something known as integration (a common technique in calculus), which uses the following symbol **∫**
 </div>
 
-<div class="index--instructor-notes-wide--6JxNO layout--content-wide--tivIS layout--content--3Smmq"><div class="_notes-wide--notes-wide--23TbE"><div class="ltr"><div class="index-module--markdown--2MdcR ureact-markdown "><h2 id="final-steps-for-calculating-the-mean">Final Steps for Calculating the Mean</h2>
+<div <h2 id="final-steps-for-calculating-the-mean">Final Steps for Calculating the Mean</h2>
 <p>To finalize our calculation of the mean, we introduce <strong>n</strong> as the total number of values in our dataset.  We can use this notation both at the top of our summation, as well as for the value that we divide by when calculating the mean.  </p>
   
 <img src = 'https://latex.codecogs.com/gif.latex?%5Cfrac%7B1%7D%7Bn%7D%5Csum_%7Bi%3D1%7D%5E%7Bi%3Dn%7Dx_%7Bi%7D'>
@@ -281,7 +281,7 @@ The **Σ** sign is used for aggregating using summation, but we might choose to 
 <li>The way the tables work together.  </li>
 </ol>
 <p><strong>You can think of each of the boxes below as a spreadsheet.</strong></p>
-</div></div><span></span></div></div></div><div><div class="index--container--2OwOl"><div class="index--atom--lmAIo layout--content--3Smmq"><div><a href="#" class="image-atom--image-atom--1XDdu"><div class="index--image-atom-content--YoZVu"><div class="index--image-and-annotations-container--1o6QP"><img src="https://video.udacity-data.com/topher/2017/August/59821d7d_screen-shot-2017-08-02-at-11.14.25-am/screen-shot-2017-08-02-at-11.14.25-am.png" width="809px" class="index--image--1wh9w"></div></div></a></div><span></span></div></div></div><div><div class="index--container--2OwOl"><div class="index--atom--lmAIo layout--content--3Smmq"><div class="ltr"><div class="index-module--markdown--2MdcR ureact-markdown "><h3 id="what-to-notice">What to Notice</h3>
+</div></div><span></span></div></div></div><div><div ><h3 id="what-to-notice">What to Notice</h3>
 <p>In the Parch &amp; Posey database there are five tables (essentially 5 spreadsheets): </p>
 <ol>
 <li><strong>web_events</strong></li>
@@ -291,10 +291,10 @@ The **Σ** sign is used for aggregating using summation, but we might choose to 
 <li><strong>region</strong> </li>
 </ol>
 <p>You can think of each of these tables as an individual spreadsheet.  Then the columns in each spreadsheet are listed below the table name.  For example, the <strong>region</strong> table has two columns: <code>id</code> and <code>name</code>.  Alternatively the <strong>web_events</strong> table has four columns.</p>
-</div></div><span></span></div></div></div><div><div class="index--container--2OwOl"><div class="index--atom--lmAIo layout--content--3Smmq"><div><a href="#" class="image-atom--image-atom--1XDdu"><div class="index--image-atom-content--YoZVu"><div class="index--image-and-annotations-container--1o6QP"><img src="https://video.udacity-data.com/topher/2017/August/59852269_screen-shot-2017-08-04-at-6.41.07-pm/screen-shot-2017-08-04-at-6.41.07-pm.png" width="568px" class="index--image--1wh9w"></div></div></a></div><span></span></div></div></div><div><div class="index--container--2OwOl"><div class="index--atom--lmAIo layout--content--3Smmq"><div class="ltr"><div class="index-module--markdown--2MdcR ureact-markdown "><p>The "crow's foot" that connects the tables together shows us how the columns in one table relate to the columns in another table.  In this first lesson, you will be learning the basics of how to work with SQL to interact with a single table.</p>
+</div></div><span></span></div></div></div><div><div crow's foot" that connects the tables together shows us how the columns in one table relate to the columns in another table.  In this first lesson, you will be learning the basics of how to work with SQL to interact with a single table.</p>
 </div></div><span></span></div></div></div></div>
 <hr>
-<div class="_main--content-container--ILkoI"><div><div class="index--container--2OwOl"><div class="index--atom--lmAIo layout--content--3Smmq"><div class="ltr"><div class="index-module--markdown--2MdcR ureact-markdown "><h2 id="introduction">Introduction</h2>
+<div ><h2 id="introduction">Introduction</h2>
 <p>Before we dive into writing Structured Query Language (SQL) queries, let's take a look at what makes SQL and the databases that utilize SQL so popular.  </p>
 <p>I think it is an important distinction to say that SQL is a <strong>language</strong>.  Hence, the last word of SQ<strong>L</strong> being <strong>language</strong>.  SQL is used all over the place beyond the databases we will utilize in this class.  With that being said, SQL is most popular for its interaction with databases.  For this class, you can think of a <strong>database</strong> as a bunch of excel spreadsheets all sitting in one place.  Not all databases are a bunch of excel spreadsheets sitting in one place, but it is a reasonable idea for this class.</p>
   <hr>
@@ -320,7 +320,7 @@ The **Σ** sign is used for aggregating using summation, but we might choose to 
 </ol>
 </div></div><span></span></div></div></div></div>
 <hr>
-<div class="index--instructor-notes-wide--6JxNO layout--content-wide--tivIS layout--content--3Smmq"><div class="_notes-wide--notes-wide--23TbE"><div class="ltr"><div class="index-module--markdown--2MdcR ureact-markdown "><p>A few key points about data stored in SQL databases:</p>
+<div <p>A few key points about data stored in SQL databases:</p>
 <ol>
 <li><p><strong>Data in databases is stored in tables that can be thought of just like Excel spreadsheets.</strong> <br>For the most part, you can think of a database as a bunch of Excel spreadsheets.  Each spreadsheet has rows and columns.  Where each row holds data on a transaction, a person, a company, etc., while each column holds data pertaining to a particular aspect of one of the rows you care about like a name, location, a unique id, etc.<br><br></p>
 </li>
@@ -433,10 +433,10 @@ The **Σ** sign is used for aggregating using summation, but we might choose to 
 <p>This allows to be more efficient in the number of characters needed to write.</p>
 <hr>
   
-  <div class="ltr"><div class="index-module--markdown--2MdcR ureact-markdown "><h2 id="Descriptive Statistics II">Descriptive Statistics II</h2>
+  <div ><h2 id="Descriptive Statistics II">Descriptive Statistics II</h2>
 
   
-  <div class="index--instructor-notes-wide--6JxNO layout--content-wide--tivIS layout--content--3Smmq"><div class="_notes-wide--notes-wide--23TbE"><div class="ltr"><div class="index-module--markdown--2MdcR ureact-markdown "><h2 id="measures-of-spread">Measures of Spread</h2>
+  <div <h2 id="measures-of-spread">Measures of Spread</h2>
 <p><strong>Measures of Spread</strong> are used to provide us an idea of how spread out our data are from one another.  Common measures of spread include:</p>
 <ol>
 <li><strong>Range</strong></li>
@@ -448,7 +448,7 @@ The **Σ** sign is used for aggregating using summation, but we might choose to 
 </div></div></div></div>
 <hr>
 
-<div class="index--instructor-notes-container--24U8Y shared--outer-container--3eppq"><div class="index--instructor-notes-wide--6JxNO layout--content-wide--tivIS layout--content--3Smmq"><div class="_notes-wide--notes-wide--23TbE"><div class="ltr"><div class="index-module--markdown--2MdcR ureact-markdown "><h2 id="histograms">Histograms</h2>
+<div ><div <h2 id="histograms">Histograms</h2>
 <p>Histograms are super useful to understanding the different aspects of quantitative data.  In the upcoming concepts, you will see histograms used all the time to help you understand the four aspects we outlined earlier regarding a quantitative variable: </p>
 <ul>
 <li>center</li>
@@ -460,7 +460,7 @@ The **Σ** sign is used for aggregating using summation, but we might choose to 
 
 <hr>
 
-<div class="index--instructor-notes-wide--6JxNO layout--content-wide--tivIS layout--content--3Smmq"><div class="_notes-wide--notes-wide--23TbE"><div class="ltr"><div class="index-module--markdown--2MdcR ureact-markdown "><h2 id="calculating-the-5-number-summary">Calculating the 5 Number Summary</h2>
+<div <h2 id="calculating-the-5-number-summary">Calculating the 5 Number Summary</h2>
 <p>The five number summary consist of 5 values:</p>
 <ol>
 <li><strong>Minimum:</strong> The smallest number in the dataset.</li>
@@ -478,7 +478,7 @@ The **Σ** sign is used for aggregating using summation, but we might choose to 
 
 <hr>
 
-<div class="index-module--markdown--2MdcR ureact-markdown "><h3 id="standard-deviation-and-variance">Standard Deviation and Variance</h3>
+<div ><h3>Standard Deviation and Variance</h3>
 <p>The <strong>standard deviation</strong> is one of the most common measures for talking about the spread of data.  It is defined as <strong>the average distance of each observation from the mean</strong>.  </p>
 </div>
 
@@ -506,16 +506,16 @@ The **Σ** sign is used for aggregating using summation, but we might choose to 
 </div>
 
 <hr>
-<div class="_main--content-container--ILkoI"><div><div class="index--container--2OwOl"><div class="index--atom--lmAIo layout--content--3Smmq"><div class="ltr"><div class="index-module--markdown--2MdcR ureact-markdown "><h3 id="more-on-center-and-spread">More On Center And Spread</h3>
+<div ><h3 id="more-on-center-and-spread">More On Center And Spread</h3>
 <p>When analyzing skewed data, it is common to report numeric summaries like the median and 5 number summary, as the mean and standard deviation may be misleading.  </p>
 <p>However, with symmetric data, the mean and standard deviation are commonly used, as we can understand what proportion of points might fall 1, 2, or 3 standard deviations away based on the empirical rule associated with normal distributions.</p>
-</div></div><span></span></div></div></div><div><div class="index--container--2OwOl"><div class="index--atom--lmAIo layout--content--3Smmq"><div><a href="#" class="image-atom--image-atom--1XDdu"><div class="index--image-atom-content--YoZVu"><div class="index--image-and-annotations-container--1o6QP"><img src="https://video.udacity-data.com/topher/2017/December/5a272f73_screen-shot-2017-12-05-at-3.44.09-pm/screen-shot-2017-12-05-at-3.44.09-pm.png" alt="" width="676px" class="index--image--1wh9w"></div></div></a></div><span></span></div></div></div><div><div class="index--container--2OwOl"><div class="index--atom--lmAIo layout--content--3Smmq"><div class="ltr"><div class="index-module--markdown--2MdcR ureact-markdown "><p>You can read more about this <a target="_blank" href="https://www.mathsisfun.com/data/standard-normal-distribution.html">here</a>.  </p>
+</div></div><span></span></div></div></div><div><div ><p>You can read more about this <a target="_blank" href="https://www.mathsisfun.com/data/standard-normal-distribution.html">here</a>.  </p>
 <h3 id="standard-deviation-and-skewed-distributions">Standard Deviation and Skewed Distributions</h3>
 <p>Standard Deviations can be calculated for any data set, whether it is normally distributed or skewed. So with the data below be careful what assumptions you are making about the underlying data.</p>
 <p>Also the standard deviation basically provides which of two sets of data are more spread out.</p>
 </div></div><span></span></div></div></div>
   
-  <div class="index-module--markdown--2MdcR ureact-markdown "><h2 id="descriptive-vs-inferential-statistics">Descriptive vs. Inferential Statistics</h2>
+  <div ><h2 id="descriptive-vs-inferential-statistics">Descriptive vs. Inferential Statistics</h2>
 <p>In this section, we learned about how <strong>Inferential Statistics</strong> differs from <strong>Descriptive Statistics</strong>.  </p>
 <hr>
 <h3 id="descriptive-statistics">Descriptive Statistics</h3>
@@ -532,4 +532,123 @@ The **Σ** sign is used for aggregating using summation, but we might choose to 
 <li><strong>Statistic</strong> - numeric summary about a sample</li>
 </ol>
 <hr>
+</div>
+
+## SQL Aggregation
+
+NULLs are a datatype that specifies where no data exists in SQL.
+
+<div <p> Notice that <strong>NULL</strong>s are different than a zero - they are cells where data does not exist. </p>
+<p>When identifying <strong>NULL</strong>s in a <strong>WHERE</strong> clause, we write <strong>IS NULL</strong> or <strong>IS NOT NULL</strong>.  We don't use <code>=</code>, because <strong>NULL</strong> isn't considered a value in SQL.  Rather, it is a property of the data.</p>
+<h3 id="nulls-expert-tip">NULLs - Expert Tip</h3>
+<p>There are two common ways in which you are likely to encounter <strong>NULL</strong>s:</p>
+<ul>
+<li><p><strong>NULL</strong>s frequently occur when performing a <strong>LEFT</strong> or <strong>RIGHT JOIN</strong>. You saw in the last lesson - when some rows in the left table of a left join are not matched with rows in the right table, those rows will contain some <strong>NULL</strong> values in the result set.<br><br></p>
+</li>
+<li><p><strong>NULL</strong>s can also occur from simply missing data in our database.</p>
+</li>
+</ul>
+</div></div></div></div>
+<hr>
+
+<div><div ><h3 id="count-the-number-of-rows-in-a-table">COUNT the Number of Rows in a Table</h3>
+<p>Try your hand at finding the number of rows in each table.  Here is an example of finding all the rows in the <strong>accounts</strong> table.</p>
+<pre><code><span class="hljs-operator"><span class="hljs-keyword">SELECT</span> <span class="hljs-keyword">COUNT</span>(*)
+<span class="hljs-keyword">FROM</span> accounts;</span>
+</code></pre><p>But we could have just as easily chosen a column to drop into the aggregation function:</p>
+<pre><code><span class="hljs-operator"><span class="hljs-keyword">SELECT</span> <span class="hljs-keyword">COUNT</span>(accounts.<span class="hljs-keyword">id</span>)
+<span class="hljs-keyword">FROM</span> accounts;</span>
+</code></pre><p>These two statements are equivalent, but this isn't always the case.</p>
+  <p>Notice that <strong>COUNT</strong> does not consider rows that have <strong>NULL</strong> values.  Therefore, this can be useful for quickly identifying which rows have missing data.</p>
+</div></div><span></span></div></div></div>
+
+<p>Functionally, <strong>MIN</strong> and <strong>MAX</strong> are similar to <strong>COUNT</strong> in that they can be used on non-numerical columns. Depending on the column type, <strong>MIN</strong> will return the lowest number, earliest date, or non-numerical value as early in the alphabet as possible. As you might suspect, <strong>MAX</strong> does the opposite—it returns the highest number, the latest date, or the non-numerical value closest alphabetically to “Z.”</p>
+
+<p>Similar to other software <strong>AVG</strong> returns the mean of the data - that is the sum of all of the values in the column divided by the number of values in a column.  This aggregate function again ignores the <strong>NULL</strong> values in both the numerator and the denominator.</p>
+
+<div <p>The key takeaways here:</p>
+<ul>
+<li><p><strong>GROUP BY</strong> can be used to aggregate data within subsets of the data.  For example, grouping for different accounts, different regions, or different sales representatives.<br><br></p>
+</li>
+<li><p>Any column in the <strong>SELECT</strong> statement that is not within an aggregator must be in the <strong>GROUP BY</strong> clause.<br><br></p>
+</li>
+<li><p>The <strong>GROUP BY</strong> always goes between <strong>WHERE</strong> and <strong>ORDER BY</strong>.<br><br></p>
+</li>
+<li><p><strong>ORDER BY</strong> works like <strong>SORT</strong> in spreadsheet software.</p>
+</li>
+</ul>
+<h3 id="group-by-expert-tip">GROUP BY - Expert Tip</h3>
+<p>Before we dive deeper into aggregations using <strong>GROUP BY</strong> statements, it is worth noting that SQL evaluates the aggregations before the <strong>LIMIT</strong> clause. If you don’t group by any columns, you’ll get a 1-row result—no problem there. If you group by a column with enough unique values that it exceeds the <strong>LIMIT</strong> number, the aggregates will be calculated, and then some rows will simply be omitted from the results.</p>
+<p>This is actually a nice way to do things because you know you’re going to get the correct aggregates. If SQL cuts the table down to 100 rows, then performed the aggregations, your results would be substantially different. The above query’s results exceed 100 rows, so it’s a perfect example. In the next concept, use the SQL environment to try removing the <strong>LIMIT</strong> and running it again to see what changes.</p>
+</div></div></div></div>
+
+<div <p>Key takeaways:</p>
+<ul>
+<li>You can <strong>GROUP BY</strong> multiple columns at once, as we showed here.  This is often useful to aggregate across a number of different segments.  <br><br></li>
+<li>The order of columns listed in the <strong>ORDER BY</strong> clause does make a difference.  You are ordering the columns from left to right.</li>
+</ul>
+<h3 id="group-by-expert-tips">GROUP BY - Expert Tips</h3>
+<ul>
+<li><p>The order of column names in your <strong>GROUP BY</strong> clause doesn’t matter—the results will be the same regardless. If we run the same query and reverse the order in the <strong>GROUP BY</strong> clause, you can see we get the same results.<br><br></p>
+</li>
+<li><p>As with <strong>ORDER BY</strong>, you can substitute numbers for column names in the <strong>GROUP BY</strong> clause. It’s generally recommended to do this only when you’re grouping many columns, or if something else is causing the text in the GROUP BY clause to be excessively long.<br><br></p>
+</li>
+<li><p>A reminder here that any column that is not within an aggregation must show up in your GROUP BY statement.  If you forget, you will likely get an error.  However, in the off chance that your query does work, you might not like the results! </p>
+</li>
+</ul>
+</div></div></div></div>
+
+<div ><div <p><strong>DISTINCT</strong> is always used in <strong>SELECT</strong> statements, and it provides the unique rows for all columns written in the <strong>SELECT</strong> statement.  Therefore, you only use <strong>DISTINCT</strong> once in any particular <strong>SELECT</strong> statement. </p>
+<p>You could write:</p>
+<pre><code><span class="hljs-operator"><span class="hljs-keyword">SELECT</span> <span class="hljs-keyword">DISTINCT</span> column1, column2, column3
+<span class="hljs-keyword">FROM</span> table1;</span>
+</code></pre><p>which would return the unique (or <strong>DISTINCT</strong>) rows across all three columns.</p>
+<p>You would <strong>not</strong> write:</p>
+<pre><code><span class="hljs-operator"><span class="hljs-keyword">SELECT</span> <span class="hljs-keyword">DISTINCT</span> column1, <span class="hljs-keyword">DISTINCT</span> column2, <span class="hljs-keyword">DISTINCT</span> column3
+<span class="hljs-keyword">FROM</span> table1;</span>
+</code></pre><p> You can think of <strong>DISTINCT</strong> the same way you might think of the statement "unique".  </p>
+<h3 id="distinct-expert-tip">DISTINCT - Expert Tip</h3>
+<p>It’s worth noting that using <strong>DISTINCT</strong>, particularly in aggregations, can slow your queries down quite a bit. </p>
+</div></div></div></div></div>
+
+<div ><h3 id="having-expert-tip">HAVING - Expert Tip</h3>
+<p><strong>HAVING</strong> is the “clean” way to filter a query that has been aggregated, but this is also commonly done using a <a target="_blank" href="https://community.modeanalytics.com/sql/tutorial/sql-subqueries/">subquery</a>.  Essentially, any time you want to perform a <strong>WHERE</strong> on an element of your query that was created by an aggregate, you need to use <strong>HAVING</strong> instead.</p>
+</div>
+
+<div <p><strong>GROUP</strong>ing <strong>BY</strong> a date column is not usually very useful in SQL, as these columns tend to have transaction data down to a second.  Keeping date information at such a granular data is both a blessing and a curse, as it gives really precise information (a blessing), but it makes grouping information together directly difficult (a curse).  </p>
+<p>Lucky for us, there are a number of built in SQL functions that are aimed at helping us improve our experience in working with dates.</p>
+<p><strong>Here we saw that dates are stored in year, month, day, hour, minute, second, which helps us in truncating.  In the next concept, you will see a number of functions we can use in SQL to take advantage of this functionality.</strong></p>
+<p>In <a target="_blank" href="https://en.wikipedia.org/wiki/Date_format_by_country">this link you can find the formatting of dates around the world, as referenced in the video</a>.</p>
+</div></div></div></div>
+
+<div <p>The first function you are introduced to in working with dates is <strong>DATE_TRUNC</strong>.</p>
+<p><strong>DATE_TRUNC</strong> allows you to truncate your date to a particular part of your date-time column.  Common trunctions are <code>day</code>, <code>month</code>, and <code>year</code>.  <a target="_blank" href="https://blog.modeanalytics.com/date-trunc-sql-timestamp-function-count-on/">Here</a> is a great blog post by Mode Analytics on the power of this function. </p>
+<p><strong>DATE_PART</strong> can be useful for pulling a specific portion of a date, but notice pulling <code>month</code> or day of the week (<code>dow</code>) means that you are no longer keeping the years in order.  Rather you are grouping for certain components regardless of which year they belonged in.</p>
+<p>For additional functions you can use with dates, check out the documentation <a target="_blank" href="https://www.postgresql.org/docs/9.1/static/functions-datetime.html">here</a>, but the <strong>DATE_TRUNC</strong> and <strong>DATE_PART</strong> functions definitely give you a great start!</p>
+<p>You can reference the columns in your select statement in <strong>GROUP BY</strong> and <strong>ORDER BY</strong> clauses with numbers that follow the order they appear in the select statement. For example</p>
+<p>SELECT standard_qty, COUNT(*)</p>
+<p>FROM orders</p>
+<p>GROUP BY 1   <em>(this 1 refers to standard_qty since it is the first of the columns included in the select statement)</em></p>
+<p>ORDER BY 1    <em>(this 1 refers to standard_qty since it is the first of the columns included in the select statement)</em></p>
+</div></div></div></div>
+
+<div ><h3 id="case-expert-tip">CASE - Expert Tip</h3>
+<ul>
+<li>The CASE statement always goes in the SELECT clause.<br><br></li>
+<li>CASE must include the following components: WHEN, THEN, and END. ELSE is an optional component to catch cases that didn’t meet any of the other previous CASE conditions.<br><br></li>
+<li>You can make any conditional statement using any conditional operator (like <a target="_blank" href="https://mode.com/resources/sql-tutorial/sql-where">WHERE</a>) between WHEN and THEN. This includes stringing together multiple conditional statements using AND and OR.<br><br></li>
+<li>You can include multiple WHEN statements, as well as an ELSE statement again, to deal with any unaddressed conditions.</li>
+</ul>
+<p> Example</p>
+  
+```sql
+SELECT OrderID, Quantity,
+CASE
+    WHEN Quantity > 30 THEN "The quantity is greater than 30"
+    WHEN Quantity = 30 THEN "The quantity is 30"
+    ELSE "The quantity is under 30"
+END AS QuantityText
+FROM OrderDetails;
+```
+
 </div>
