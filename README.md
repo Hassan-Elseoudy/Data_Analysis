@@ -444,7 +444,6 @@ The **Σ** sign is used for aggregating using summation, but we might choose to 
 <li><strong>Standard Deviation</strong></li>
 <li><strong>Variance</strong></li>
 </ol>
-<p>Throughout this lesson you will learn how to calculate these, as well as why we would use one measure of spread over another.</p>
 </div></div></div></div>
 <hr>
 
