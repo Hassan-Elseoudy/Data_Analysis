@@ -651,3 +651,75 @@ FROM OrderDetails;
 ```
 
 </div>
+
+
+<div class="index--atom--lmAIo layout--content--3Smmq"><div class="ltr"><div class="index-module--markdown--2MdcR ureact-markdown "><h1 id="subquery-formatting">Subquery Formatting</h1>
+<p>When writing <strong>Subqueries</strong>, it is easy for your query to look incredibly complex.  In order to assist your reader, which is often just yourself at a future date, formatting SQL will help with understanding your code.  </p>
+<p>The important thing to remember when using subqueries is to provide some way for the reader to easily determine which parts of the query will be executed together. Most people do this by indenting the subquery in some way - you saw this with the solution blocks in the previous concept.  </p>
+<p>The examples in this class are indented quite far—all the way to the parentheses. This isn’t practical if you nest many subqueries, but in general, be thinking about how to write your queries in a readable way.  Examples of the same query written multiple different ways is provided below.  You will see that some are much easier to read than others.</p>
+<hr>
+<h3 id="badly-formatted-queries">Badly Formatted Queries</h3>
+<p>Though these poorly formatted examples will execute the same way as the well formatted examples, they just aren't very friendly for understanding what is happening!</p>
+<p>Here is the first, where it is impossible to decipher what is going on:</p>
+<pre><code><span class="hljs-operator"><span class="hljs-keyword">SELECT</span> * <span class="hljs-keyword">FROM</span> (<span class="hljs-keyword">SELECT</span> DATE_TRUNC(<span class="hljs-string">'day'</span>,occurred_at) <span class="hljs-keyword">AS</span> <span class="hljs-keyword">day</span>, channel, <span class="hljs-keyword">COUNT</span>(*) <span class="hljs-keyword">as</span> <span class="hljs-keyword">events</span> <span class="hljs-keyword">FROM</span> web_events <span class="hljs-keyword">GROUP</span> <span class="hljs-keyword">BY</span> <span class="hljs-number">1</span>,<span class="hljs-number">2</span> <span class="hljs-keyword">ORDER</span> <span class="hljs-keyword">BY</span> <span class="hljs-number">3</span> <span class="hljs-keyword">DESC</span>) sub;</span>
+</code></pre><p>This second version, which includes some helpful line breaks, is easier to read than that previous version, but it is still not as easy to read as the queries in the <strong>Well Formatted Query</strong> section.</p>
+<pre><code><span class="hljs-operator"><span class="hljs-keyword">SELECT</span> *
+<span class="hljs-keyword">FROM</span> (
+<span class="hljs-keyword">SELECT</span> DATE_TRUNC(<span class="hljs-string">'day'</span>,occurred_at) <span class="hljs-keyword">AS</span> <span class="hljs-keyword">day</span>,
+channel, <span class="hljs-keyword">COUNT</span>(*) <span class="hljs-keyword">as</span> <span class="hljs-keyword">events</span>
+<span class="hljs-keyword">FROM</span> web_events 
+<span class="hljs-keyword">GROUP</span> <span class="hljs-keyword">BY</span> <span class="hljs-number">1</span>,<span class="hljs-number">2</span>
+<span class="hljs-keyword">ORDER</span> <span class="hljs-keyword">BY</span> <span class="hljs-number">3</span> <span class="hljs-keyword">DESC</span>) sub;</span>
+</code></pre><hr>
+<h3 id="well-formatted-query">Well Formatted Query</h3>
+<p>Now for a well formatted example, you can see the table we are pulling from much easier than in the previous queries.  </p>
+<pre><code><span class="hljs-operator"><span class="hljs-keyword">SELECT</span> *
+<span class="hljs-keyword">FROM</span> (<span class="hljs-keyword">SELECT</span> DATE_TRUNC(<span class="hljs-string">'day'</span>,occurred_at) <span class="hljs-keyword">AS</span> <span class="hljs-keyword">day</span>,
+                channel, <span class="hljs-keyword">COUNT</span>(*) <span class="hljs-keyword">as</span> <span class="hljs-keyword">events</span>
+      <span class="hljs-keyword">FROM</span> web_events 
+      <span class="hljs-keyword">GROUP</span> <span class="hljs-keyword">BY</span> <span class="hljs-number">1</span>,<span class="hljs-number">2</span>
+      <span class="hljs-keyword">ORDER</span> <span class="hljs-keyword">BY</span> <span class="hljs-number">3</span> <span class="hljs-keyword">DESC</span>) sub;</span>
+</code></pre><p>Additionally, if we have a <strong>GROUP BY</strong>, <strong>ORDER BY</strong>, <strong>WHERE</strong>, <strong>HAVING</strong>, or any other statement following our subquery, we would then indent it at the same level as our outer query.</p>
+<p>The query below is similar to the above, but it is applying additional statements to the outer query, so you can see there are <strong>GROUP BY</strong> and <strong>ORDER BY</strong> statements used on the output are not tabbed. The inner query <strong>GROUP BY</strong> and <strong>ORDER BY</strong> statements are indented to match the inner table.</p>
+<pre><code><span class="hljs-operator"><span class="hljs-keyword">SELECT</span> *
+<span class="hljs-keyword">FROM</span> (<span class="hljs-keyword">SELECT</span> DATE_TRUNC(<span class="hljs-string">'day'</span>,occurred_at) <span class="hljs-keyword">AS</span> <span class="hljs-keyword">day</span>,
+                channel, <span class="hljs-keyword">COUNT</span>(*) <span class="hljs-keyword">as</span> <span class="hljs-keyword">events</span>
+      <span class="hljs-keyword">FROM</span> web_events 
+      <span class="hljs-keyword">GROUP</span> <span class="hljs-keyword">BY</span> <span class="hljs-number">1</span>,<span class="hljs-number">2</span>
+      <span class="hljs-keyword">ORDER</span> <span class="hljs-keyword">BY</span> <span class="hljs-number">3</span> <span class="hljs-keyword">DESC</span>) sub
+<span class="hljs-keyword">GROUP</span> <span class="hljs-keyword">BY</span> <span class="hljs-keyword">day</span>, channel, <span class="hljs-keyword">events</span>
+<span class="hljs-keyword">ORDER</span> <span class="hljs-keyword">BY</span> <span class="hljs-number">2</span> <span class="hljs-keyword">DESC</span>;</span>
+</code></pre><p>These final two queries are so much easier to read!</p>
+</div></div><span></span></div>
+
+<hr>
+
+<div><div class="index--container--2OwOl"><div class="index--atom--lmAIo layout--content--3Smmq"><div class="ltr"><div class="index-module--markdown--2MdcR ureact-markdown "><h3 id="subqueries-part-ii">Subqueries Part II</h3>
+<p>In the first subquery you wrote, you created a table that you could then query again in the <strong>FROM</strong> statement.  However, if you are only returning a single value, you might use that value in a logical statement like <strong>WHERE</strong>, <strong>HAVING</strong>, or even <strong>SELECT</strong> - the value could be nested within a <strong>CASE</strong> statement.  </p>
+<p>On the next concept, we will work through this example, and then you will get some practice on answering some questions on your own.</p>
+</div></div><span></span></div></div></div>
+
+<hr>
+
+<div class="ltr"><div class="index-module--markdown--2MdcR ureact-markdown "><p>The <strong>WITH</strong> statement is often called a <strong>Common Table Expression</strong> or <strong>CTE</strong>.  Though these expressions serve the exact same purpose as subqueries, they are more common in practice, as they tend to be cleaner for a future reader to follow the logic.  </p>
+<p>In the next concept, we will walk through this example a bit more slowly to make sure you have all the similarities between subqueries and these expressions down for you to use in practice!  If you are already feeling comfortable skip ahead to practice the quiz section.</p>
+</div></div>
+
+**Example**
+
+<pre><code>WITH table1 AS (
+          <span class="hljs-operator"><span class="hljs-keyword">SELECT</span> *
+          <span class="hljs-keyword">FROM</span> web_events),
+
+     table2 <span class="hljs-keyword">AS</span> (
+          <span class="hljs-keyword">SELECT</span> *
+          <span class="hljs-keyword">FROM</span> accounts)
+
+
+<span class="hljs-keyword">SELECT</span> *
+<span class="hljs-keyword">FROM</span> table1
+<span class="hljs-keyword">JOIN</span> table2
+<span class="hljs-keyword">ON</span> table1.account_id = table2.<span class="hljs-keyword">id</span>;</span>
+</code></pre>
+
+<hr>
