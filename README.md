@@ -723,3 +723,98 @@ channel, <span class="hljs-keyword">COUNT</span>(*) <span class="hljs-keyword">a
 </code></pre>
 
 <hr>
+
+<div class="_notes-wide--notes-wide--23TbE"><div class="ltr"><div class="index-module--markdown--2MdcR ureact-markdown "><p>Here we looked at three new functions:</p>
+<ol>
+<li><strong>LEFT</strong></li>
+<li><strong>RIGHT</strong></li>
+<li><strong>LENGTH</strong></li>
+</ol>
+<p><strong>LEFT</strong> pulls a specified number of characters for each row in a specified column starting at the beginning (or from the left).  As you saw here, you can pull the first three digits of a phone number using <strong>LEFT(phone_number, 3)</strong>.<br><br></p>
+<p><strong>RIGHT</strong> pulls a specified number of characters for each row in a specified column starting at the end (or from the right).  As you saw here, you can pull the last eight digits of a phone number using <strong>RIGHT(phone_number, 8)</strong>.<br><br></p>
+<p><strong>LENGTH</strong> provides the number of characters for each row of a specified column.  Here, you saw that we could use this to get the length of each phone number as <strong>LENGTH(phone_number)</strong>.</p>
+</div></div></div>
+
+<hr>
+
+<div class="ltr"><div class="index-module--markdown--2MdcR ureact-markdown "><p>In this lesson, you learned about:</p>
+<ol>
+<li><strong>POSITION</strong></li>
+<li><strong>STRPOS</strong></li>
+<li><strong>LOWER</strong></li>
+<li><strong>UPPER</strong></li>
+</ol>
+<p><strong>POSITION</strong> takes a character and a column, and provides the index where that character is for each row.  The index of the first position is 1 in SQL.  If you come from another programming language, many begin indexing at 0.  Here, you saw that you can pull the index of a comma as <strong>POSITION(',' IN city_state)</strong>.<br><br></p>
+<p><strong>STRPOS</strong> provides the same result as <strong>POSITION</strong>, but the syntax for achieving those results is a bit different as shown here: <strong>STRPOS(city_state, ',')</strong>.<br><br></p>
+<p>Note, both <strong>POSITION</strong> and <strong>STRPOS</strong> are case sensitive, so looking for <strong>A</strong> is different than looking for <strong>a</strong>.  <br><br></p>
+<p>Therefore, if you want to pull an index regardless of the case of a letter, you might want to use <strong>LOWER</strong> or <strong>UPPER</strong> to make all of the characters lower or uppercase.</p>
+</div></div>
+
+<hr>
+
+<div class="index--instructor-notes-wide--6JxNO layout--content-wide--tivIS layout--content--3Smmq"><div class="_notes-wide--notes-wide--23TbE"><div class="ltr"><div class="index-module--markdown--2MdcR ureact-markdown "><p>In this lesson you learned about:</p>
+<ol>
+<li><strong>CONCAT</strong></li>
+<li>Piping <code>||</code></li>
+</ol>
+<p>Each of these will allow you to combine columns together across rows.  In this video, you saw how first and last names stored in separate columns could be combined together to create a full name: <strong>CONCAT(first_name, ' ', last_name)</strong> or with piping as <strong>first_name || ' ' || last_name</strong>.</p>
+</div></div></div></div>
+
+<hr>
+
+<div class="index-module--markdown--2MdcR ureact-markdown "><p>In this video, you saw additional functionality for working with dates including:</p>
+<ol>
+<li><strong>TO_DATE</strong></li>
+<li><strong>CAST</strong></li>
+<li>Casting with <code>::</code></li>
+</ol>
+<p><strong>DATE_PART('month', TO_DATE(month, 'month'))</strong> here changed a month name into the number associated with that particular month.<br><br></p>
+<p>Then you can change a string to a date using <strong>CAST</strong>.  <strong>CAST</strong> is actually useful to change lots of column types.  Commonly you might be doing as you saw here, where you change a <code>string</code> to a <code>date</code> using <strong>CAST(date_column AS DATE)</strong>.  However, you might want to make other changes to your columns in terms of their data types.  You can see other examples <a target="_blank" href="http://www.postgresqltutorial.com/postgresql-cast/">here</a>.</p>
+<p>In this example, you also saw that instead of <strong>CAST(date_column AS DATE)</strong>, you can use <strong>date_column::DATE</strong>.</p>
+<h3 id="expert-tip">Expert Tip</h3>
+<p>Most of the functions presented in this lesson are specific to strings.  They won’t work with dates, integers or floating-point numbers. However, using any of these functions will automatically change the data to the appropriate type. </p>
+<p><strong>LEFT</strong>, <strong>RIGHT</strong>, and <strong>TRIM</strong> are all used to select only certain elements of strings, but using them to select elements of a number or date will treat them as strings for the purpose of the function.  Though we didn't cover <strong>TRIM</strong> in this lesson explicitly, it can be used to remove characters from the beginning and end of a string.  This can remove unwanted spaces at the beginning or end of a row that often happen with data being moved from Excel or other storage systems.</p>
+<p>There are a number of variations of these functions, as well as several other string functions not covered here. 
+ Different databases use subtle variations on these functions, so be sure to look up the appropriate database’s syntax if you’re connected to a private database.The <a target="_blank" href="http://www.postgresql.org/docs/9.1/static/functions-string.html">Postgres literature</a> contains a lot of the related functions.</p>
+</div>
+
+<hr>
+
+<p>In this video, you learned about how to use <strong>COALESCE</strong> to work with NULL values.  Unfortunately, our dataset does not have the <strong>NULL</strong> values that were fabricated in this dataset, so you will work through a different example in the next concept to get used to the <strong>COALESCE</strong> function.</p>
+
+<hr>
+
+<div class="index-module--markdown--2MdcR ureact-markdown "><p>For quantitative data, if we are just looking at one column worth of data, we have four common visuals:</p>
+<ol>
+<li>Histogram</li>
+<li>Normal Quantile Plot</li>
+<li>Stem and Leaf Plot</li>
+<li>Box and Whisker Plot</li>
+</ol>
+<p>In most cases, you will want to use a <strong>histogram</strong>.</p>
+<p>For categorical data, if we are looking at just one variable (column), we have three common visuals:</p>
+<ol>
+<li>Bar Chart</li>
+<li>Pie Chart</li>
+<li>Pareto Chart</li>
+</ol>
+<p>In most cases, you will want to use a <strong>bar chart</strong>.</p>
+</div>
+
+<hr>
+
+<div class="index--instructor-notes-wide--6JxNO layout--content-wide--tivIS layout--content--3Smmq"><div class="_notes-wide--notes-wide--23TbE"><div class="ltr"><div class="index-module--markdown--2MdcR ureact-markdown "><h3 id="scatter-plots">Scatter plots</h3>
+<p>Scatter plots are a common visual for comparing two quantitative variables.  A common summary statistic that relates to a scatter plot is the <strong>correlation coefficient</strong> commonly denoted by <strong>r</strong>.</p>
+<p>Though there are a <a target="_blank" href="http://www.statisticssolutions.com/correlation-pearson-kendall-spearman/">few different ways</a> to measure correlation between two variables, the most common way is with <a target="_blank" href="https://en.wikipedia.org/wiki/Pearson_correlation_coefficient">Pearson's correlation coefficient</a>.  Pearson's correlation coefficient provides the:</p>
+<ol>
+<li>Strength</li>
+<li>Direction</li>
+</ol>
+<p>of a <strong>linear relationship</strong>.  <a target="_blank" href="https://en.wikipedia.org/wiki/Spearman%27s_rank_correlation_coefficient">Spearman's Correlation Coefficient</a> does not measure linear relationships specifically, and it might be more appropriate for certain cases of associating two variables.</p>
+</div></div></div></div>
+
+<hr>
+
+<a href="https://ibb.co/7jGnczj"><img src="https://i.ibb.co/Kb92ZGb/image.png" alt="image" border="0"></a>
+
+<hr>
