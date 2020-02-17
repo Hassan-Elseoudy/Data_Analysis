@@ -1,4 +1,4 @@
-# Data Analysis
+# Data Analysis.
 
 ## What is Data Analysis?
 #### 1. Questions
